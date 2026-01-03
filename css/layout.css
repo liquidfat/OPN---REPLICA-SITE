@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{margin: 0 auto;
+  scroll-behavior: smooth;
+  cursor: url(../images/win95cursor.png) 0 0, auto;
+}
+
+@font-face{
+  font-family: ZNVT4;
+  src:url(../fonts/ZNVT4.ttf);
+}
+
+@font-face{
+  font-family: ZNVT8;
+  src:url(../fonts/ZNVT8.ttf);
+}
+
+@font-face{
+  font-family: ZNVT15;
+  src:url(../fonts/ZNVT15.ttf);
+}
+
+@font-face{
+  font-family: ZNVT7;
+  src:url(../fonts/ZNVT7.ttf);
+}
+
+body {
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+nav {
+    width:  100vw;
+    display: flex; 
+    height: 6%;
+    background-color: #f9f9f9;
+    position: fixed;
+    z-index: 100;
+    padding: 7px;
+} 
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    scroll-behavior: smooth;
+}
+
+nav a:hover {
+  color: #8b8b8b;
+}
+
+ul {
+    list-style-type: none;
+
+}  
+
+li {
+    font-family: "Times New Roman", serif;
+    font-size: 0.89vw;
+    color: black;
+    display: inline;
+    
+}  
+
+
+h1{
+  font-family: "Times New Roman", serif;
+  font-size: 6vw;
+  color: black;
+  padding-left: 10px;
+}
+
+h2{
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  font-size:3vw; 
+  padding: 10px 0px 0px 20px;
+  color: black;
+}
+
+h3{
+  font-family: "Noto Sans", sans-serif;
+  font-size:2.2vw; 
+}
+
+
+a{
+  color: black;
+  text-decoration: none;
+  cursor: url(../images/win95pointer.png) 0 0, auto;
+}
+
+p{
+  color: black;
+}
+
+hr{
+  width: 100%;
+  border-top: dotted black 5px;
+  margin-top: 5vh;
+  
+}
+
+.u-full-width1 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ----------------- Hero Image and text overlaying------------------ */
+#home {
+  min-height: 100vh;
+  position: relative;
+}
+
+.homecontainer{
+  padding-top: 10%;
+  width: 30%;
+  position: relative;
+}
+
+.asciiskull{
+  font-family: 'Cascadia Mono';
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  font-size: 0.4vw;
+  right: 65%;
+  top: 52%;
+  white-space: pre;
+  letter-spacing: 0;
+}
+
+.homeimg{
+  position: absolute;
+  width: 100%;
+  animation: fadein 8s ease-in;
+}
+
+.hometitle{
+  font-family: 'Libre Franklin', sans-serif;
+  z-index: 2;
+  position: absolute;
+  color: black;
+  font-size: 5vw;
+  font-weight: bold;
+  margin-top: 80%;
+  opacity: 0%;
+  animation: fadein 9s ease-in;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+  from {opacity: 0%;}
+  to{opacity: 100%;}
+}
+
+/* ------------------------------ About ------------------------------- */
+.padding{
+  padding: 20px;
+}
+
+.viewersize{
+  width: 100%;
+  height: 60vh;
+}
+
+.banner{
+  width: 100%;
+  overflow: hidden; 
+}
+
+.banimg{
+  display: flex;
+  width: max-content;
+  animation: spin 9s linear infinite;
+}
+
+#info{
+  font-family: "Noto Sans", sans-serif;
+  font-size:2.2vw;
+  font-weight: 300;
+}
+
+@keyframes spin{
+  from {transform: translateX(0);}
+  to{transform: translateX(-25.0%);}
+}
+
+
+
+/* ------------------------- Track List Table ------------------------- */
+table {
+  width: 95%;
+  margin-top: 20px;
+  border-spacing: 15px;
+}
+
+td {
+  font-family: 'Libre Franklin', sans-serif; 
+  font-weight: 500;
+  color: black;
+  font-size: 1.5vw;
+  border: 3px solid black;
+  width:15%;
+  text-align: center;
+  cursor:crosshair;
+}
+
+#tracktable td:hover {
+  color: white;
+  border-color: white;
+}
+
+#tracklistgif {
+  display: block;
+  width: 40%;
+  transition: opacity 0.4s ease;
+}
+
+#bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* ------------------------- Streaming Table ------------------------- */
+#streamingtable td{
+  border: none;
+  height: 70vh;
+}
+
+.streamimg{
+  width: 12vw;
+  transition: 0.2s ease-in-out;
+  cursor: url(../images/win95pointer.png) 0 0, auto;
+}
+
+.streamimg:hover{
+  transform:scale(1.1)
+}
+
+#spotify{
+  background-image: url(../images/spotifyback.gif);
+  background-size: 100% 100%;
+  transition: 0.2s ease-in-out;
+}
+
+#spotify:hover{
+  filter: invert();
+}
+
+#bleep{
+  background-image: url(../images/bleepback.gif);
+  background-size: 100% 100%;
+  transition: 0.2s ease-in-out;
+}
+
+#bleep:hover{
+  filter: invert();
+}
+
+#apple{
+  background-image: url(../images/appleback.gif);
+  background-size: 100% 100%;
+  transition: 0.2s ease-in-out;
+}
+
+#apple:hover{
+  filter: invert();
+}
+
+#bandcamp{
+  background-image: url(../images/bandcampback.gif);
+  background-size: 100% 100%;
+  transition: 0.2s ease-in-out;
+  filter: saturate(2) contrast(1.5);
+}
+
+#bandcamp:hover{
+  filter: invert();
+}
+
+
+/* ------------------------- Blur Pulse ------------------------- */
+.pianoblur{
+  display: flex;
+  animation: blurPulse 10s ease-in-out infinite;
+  width: 50%;
+
+}
+
+@keyframes blurPulse{
+  0% { filter: blur(0px); transform: scale(1);}
+  50% { filter: blur(10px); transform: scale(1.01);}
+  100% { filter: blur(0px); transform: scale(1);}
+}
+
+
+/* ------------------------- Merch Table ------------------------- */
+#merchtable td{
+  border: dashed;
+  height: 60vh;
+}
+
+#merchtable th{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size:3vw;
+  padding: 0;
+}
+
+#vinyl{
+  background-image: url(../images/vinylascii.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+#vinyl:hover{
+  background-image: url(../images/vinyl.png);
+  animation: borderPulse 2s linear infinite;
+  
+}
+
+#cd{
+  background-image: url(../images/cdascii.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;  
+}
+
+#cd:hover{
+  background-image: url(../images/cd.png);
+  animation: borderPulse 2s linear infinite;
+}
+
+#shirt{
+  background-image: url(../images/tshirtascii.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+#shirt:hover{
+  background-image: url(../images/tshirt.png);
+  animation: borderPulse 2s linear infinite;
+}
+
+@keyframes borderPulse {
+  0% {
+    border-color: black;
+  }
+  50% {
+    border-color: #00ffb1;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+/* ------------------------- Tour ------------------------- */
+
+#tourimg{
+  position: relative;
+  display: block;
+  margin-top: 8vh;
+  margin-left: 5%;
+  width: 175%;
+  z-index: 1;
+}
+
+#tourheader{
+  font-family: 'Noto Sans', sans-serif;
+  margin-left: 26vw; 
+}
+
+#tourheader h3{
+  color: black;
+  font-size: 3vw;
+}
+
+
+.tourtable{
+  position: relative;
+  height: 34vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 20px;
+  top: 10px;
+  z-index: 2;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background: black;
+  color: white;
+  height: 11vh;
+  align-items: center;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+  width: 90%;
+  z-index: 100;
+  
+}
+
+.location {
+  margin-left: 1vw;
+}
+
+.date {
+  margin-right: 20vw;
+}
+
+/* ------------------------------ Text Zone --------------------------- */
+.zone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 41vh;
+  cursor: url(../images/win95pointer.png) 0 0, auto;
+}
+
+.zone.state-1 { background-color: red; }
+.zone.state-2 { background-color: blue; }
+.zone.state-3 { background-color: #00ff00; }
+.zone.state-4 { background-color: black; }
+
+.zone.state-1 .zonetext { font-family: 'ZNVT15'; font-size:16vw; cursor: url(../images/win95pointer.png) 0 0, auto; }
+.zone.state-2 .zonetext { font-family: 'ZNVT7'; font-size: 12vw; color: white; cursor: url(../images/win95pointer.png) 0 0, auto; }
+.zone.state-3 .zonetext { font-family: 'ZNVT4'; font-size: 8vw; color: black; cursor: url(../images/win95pointer.png) 0 0, auto; }
+.zone.state-4 .zonetext { font-family: 'ZNVT8'; font-size: 8vw; color: white; cursor: url(../images/win95pointer.png) 0 0, auto; }
+
+
+/* ------------------------- Footer ------------------------- */
+.viewersize2{
+  width: 40%;
+  height: 40vh;
+}
+
+.footer{
+  display: flex;
+  padding: 10px; 
+}
+
+.footerimg{
+  width: 50px;
+}
+
+#footertext{
+  font-family: "Times New Roman", serif;
+  align-items: center;
+}
