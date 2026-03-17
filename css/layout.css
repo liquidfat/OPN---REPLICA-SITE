@@ -24,6 +24,15 @@
   src:url(../fonts/ZNVT7.ttf);
 }
 
+/* ----------------- ScrollBar Hide------------------ */
+
+/* hide page scrollbar (copied from stack overflow forum)*/
+html { scrollbar-width: none; } /* Firefox */
+body { -ms-overflow-style: none; } /* IE and Edge */
+body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+/* end hide page scrollbar */
+
+
 body {
   background-color: #f9f9f9;
   scroll-behavior: smooth;
@@ -32,17 +41,18 @@ body {
 nav {
     width:  100vw;
     display: flex; 
-    height: 6%;
+    height: 6.5vh;
     background-color: #f9f9f9;
     position: fixed;
     z-index: 100;
-    padding: 7px;
+    padding-left:0.3vw;
 } 
 
 nav a {
     text-decoration: none;
     color: #000000;
     scroll-behavior: smooth;
+    margin: -0.01%
 }
 
 nav a:hover {
@@ -51,7 +61,6 @@ nav a:hover {
 
 ul {
     list-style-type: none;
-
 }  
 
 li {
@@ -63,9 +72,11 @@ li {
 }  
 
 
+
+
 h1{
   font-family: "Times New Roman", serif;
-  font-size: 6vw;
+  font-size: 7vw;
   color: black;
   padding-left: 10px;
 }
@@ -113,7 +124,7 @@ hr{
 }
 
 .homecontainer{
-  padding-top: 10%;
+  padding-top: 23vh;
   width: 30%;
   position: relative;
 }
@@ -427,6 +438,7 @@ td {
   align-items: center;
   height: 41vh;
   cursor: url(../images/win95pointer.png) 0 0, auto;
+  user-select: none;
 }
 
 .zone.state-1 { background-color: red; }
@@ -438,6 +450,7 @@ td {
 .zone.state-2 .zonetext { font-family: 'ZNVT7'; font-size: 12vw; color: white; cursor: url(../images/win95pointer.png) 0 0, auto; }
 .zone.state-3 .zonetext { font-family: 'ZNVT4'; font-size: 8vw; color: black; cursor: url(../images/win95pointer.png) 0 0, auto; }
 .zone.state-4 .zonetext { font-family: 'ZNVT8'; font-size: 8vw; color: white; cursor: url(../images/win95pointer.png) 0 0, auto; }
+
 
 
 /* ------------------------- Footer ------------------------- */
