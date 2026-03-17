@@ -12,6 +12,11 @@
         <link rel="stylesheet" type="text/css" href="css/skeleton.css">
      
         <link rel="stylesheet" type="text/css" href="css/layout.css">
+        
+        <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)">
+     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
     </head>
     <body>
      
@@ -21,15 +26,10 @@
 <!--------------------NAVIGATION--------------------------->
      <nav>
 		<ul>
-          <li>ONEOHTRIX.........................................................................................................................................................................................POINT......................................................................................................................................................................................................................NEVER</li>
-          <li><a href=#home>HOME</a>.........................................</li> 
-			<li><a href=#about>ABOUT</a>..........................................................................</li> 
-			<li><a href=#tracklist>TRACKLIST</a>...........................................................................................</li>
-			<li><a href=#streaming>STREAMING</a>...............................................................................</li>
-			<li><a href=#merch>MERCHANDISE</a></li>
-          <li>...............................................<a href=#tour>TOUR</a></li> 
+          <li>ONEOHTRIX..................................................................................................................................................................................................POINT.............................................................................................................................................................................................................NEVER</li>
+          <li><a href=#home>HOME</a>.................................................<a href=#about>ABOUT</a>..........................................................................<a href=#tracklist>TRACKLIST</a>......................................................................................................<a href=#streaming>STREAMING</a>......................................................................<a href=#merch>MERCHANDISE</a>..........................................<a href=#tour>TOUR</a></li> 
 		</ul>
-	  </nav>
+	  </nav> 
      
 <!--------------------HOME SECTION--------------------------->
     <section id="home" class="u-full-width1">
@@ -81,7 +81,7 @@
       
       <div class="five columns padding">
        
-       <model-viewer class="viewersize" src="models/5.25_floppy_disk__free_version.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"></model-viewer>
+       <model-viewer class="viewersize" src="models/5.25_floppy_disk__free_version.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" loading="eager" poster="poster.webp" shadow-intensity="1"></model-viewer>
        
       </div>
  
@@ -251,7 +251,7 @@
      
      <div class="row">
       
-      <model-viewer class="viewersize2" camera-orbit="92deg 29deg 0m" src="models/roland_juno-60_synth.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls interaction-prompt="none" disable-zoom tone-mapping="neutral" poster="poster.webp" shadow-intensity="0"></model-viewer>
+      <model-viewer class="viewersize2" camera-orbit="92deg 29deg 0m" src="models/roland_juno-60_synth.glb" ar ar-modes="webxr scene-viewer quick-look" loading="eager" camera-controls interaction-prompt="none" disable-zoom tone-mapping="neutral" poster="poster.webp" shadow-intensity="0"></model-viewer>
        
       
 <!--------------------FOOTER--------------------------->
