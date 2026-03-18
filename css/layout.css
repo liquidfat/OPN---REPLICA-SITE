@@ -157,8 +157,8 @@ hr{
   font-weight: bold;
   margin-top: 80%;
   opacity: 0%;
-  animation: fadein 7s ease-in;
-  animation-delay: 6s;
+  animation: fadein 8s ease-in;
+  animation-delay: 7s;
   animation-fill-mode: forwards;
 }
 
