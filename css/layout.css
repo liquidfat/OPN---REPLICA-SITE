@@ -41,12 +41,13 @@ body {
 nav {
     width:  100vw;
     display: flex; 
-    height: 6.5vh;
+    height: 3.5em;;
     background-color: #f9f9f9;
     position: fixed;
     z-index: 100;
     padding-left:0.3vw;
-} 
+    font-size: 0.89vw;
+}
 
 nav a {
     text-decoration: none;
@@ -65,7 +66,7 @@ ul {
 
 li {
     font-family: "Times New Roman", serif;
-    font-size: 0.89vw;
+    font-size: 1em;
     color: black;
     display: inline;
     
@@ -156,8 +157,8 @@ hr{
   font-weight: bold;
   margin-top: 80%;
   opacity: 0%;
-  animation: fadein 9s ease-in;
-  animation-delay: 8s;
+  animation: fadein 7s ease-in;
+  animation-delay: 6s;
   animation-fill-mode: forwards;
 }
 
@@ -420,7 +421,10 @@ td {
   text-transform: lowercase;
   width: 90%;
   z-index: 100;
-  
+}
+
+.card h3{
+  margin-top: 1.5vh;
 }
 
 .location {
